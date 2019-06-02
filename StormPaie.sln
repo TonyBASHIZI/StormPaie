@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StormPaie", "StormPaie\StormPaie.csproj", "{52B0EE61-DBAC-4EE5-ABF7-8E551A195A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StormPaie_Lib", "StormPaie_Lib\StormPaie_Lib.csproj", "{4C285DC0-DFFC-42EF-A7EA-7C2E59ACBD10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StormPaie_Connection", "StormPaie_Connection\StormPaie_Connection.csproj", "{8B89B5A1-F999-4154-9F37-DAB3211EFA8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{52B0EE61-DBAC-4EE5-ABF7-8E551A195A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52B0EE61-DBAC-4EE5-ABF7-8E551A195A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52B0EE61-DBAC-4EE5-ABF7-8E551A195A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C285DC0-DFFC-42EF-A7EA-7C2E59ACBD10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C285DC0-DFFC-42EF-A7EA-7C2E59ACBD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C285DC0-DFFC-42EF-A7EA-7C2E59ACBD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C285DC0-DFFC-42EF-A7EA-7C2E59ACBD10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B89B5A1-F999-4154-9F37-DAB3211EFA8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B89B5A1-F999-4154-9F37-DAB3211EFA8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B89B5A1-F999-4154-9F37-DAB3211EFA8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B89B5A1-F999-4154-9F37-DAB3211EFA8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
