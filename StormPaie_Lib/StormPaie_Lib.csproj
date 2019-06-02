@@ -39,10 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ClassGlossaire.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
+    <ProjectReference Include="..\StormPaie_Connection\StormPaie_Connection.csproj">
+      <Project>{8b89b5a1-f999-4154-9f37-dab3211efa8e}</Project>
+      <Name>StormPaie_Connection</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
