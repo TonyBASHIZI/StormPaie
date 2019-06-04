@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace StormPaie.Forms
 {
-    public partial class FormLogin : Form
+    public partial class FormCardNFC : Form
     {
-        public FormLogin()
+        public FormCardNFC()
         {
             InitializeComponent();
         }
 
-        private void FormLogin_Load(object sender, EventArgs e)
+        private void FormCardNFC_Load(object sender, EventArgs e)
         {
 
         }
