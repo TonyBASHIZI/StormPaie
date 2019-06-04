@@ -478,7 +478,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(572, 29);
+            this.labelControl5.Location = new System.Drawing.Point(572, 24);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(75, 20);
             this.labelControl5.TabIndex = 10;

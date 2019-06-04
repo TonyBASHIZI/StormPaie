@@ -60,33 +60,32 @@
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtMatricule = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtNom = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtPostnom = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtPrenom = new DevExpress.XtraEditors.TextEdit();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.TxtMontant = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.LblNumCard = new System.Windows.Forms.Label();
-            this.LblPassword = new System.Windows.Forms.Label();
+            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.LblEtatLecture = new DevExpress.XtraEditors.LabelControl();
+            this.LblNumCard = new System.Windows.Forms.Label();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtPrenom = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtPostnom = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtNom = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtMatricule = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMatricule.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPrenom.Properties)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMontant.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPrenom.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMatricule.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -340,104 +339,15 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
-            // labelControl8
+            // labelControl5
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(35, 29);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(82, 20);
-            this.labelControl8.TabIndex = 16;
-            this.labelControl8.Text = "Matricule : ";
-            // 
-            // TxtMatricule
-            // 
-            this.TxtMatricule.Enabled = false;
-            this.TxtMatricule.Location = new System.Drawing.Point(162, 26);
-            this.TxtMatricule.Name = "TxtMatricule";
-            this.TxtMatricule.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMatricule.Properties.Appearance.Options.UseFont = true;
-            this.TxtMatricule.Size = new System.Drawing.Size(270, 26);
-            this.TxtMatricule.TabIndex = 15;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(35, 64);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(46, 20);
-            this.labelControl1.TabIndex = 18;
-            this.labelControl1.Text = "Nom : ";
-            // 
-            // TxtNom
-            // 
-            this.TxtNom.Enabled = false;
-            this.TxtNom.Location = new System.Drawing.Point(162, 61);
-            this.TxtNom.Name = "TxtNom";
-            this.TxtNom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNom.Properties.Appearance.Options.UseFont = true;
-            this.TxtNom.Size = new System.Drawing.Size(270, 26);
-            this.TxtNom.TabIndex = 17;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(35, 99);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(74, 20);
-            this.labelControl2.TabIndex = 20;
-            this.labelControl2.Text = "Postnom : ";
-            // 
-            // TxtPostnom
-            // 
-            this.TxtPostnom.Enabled = false;
-            this.TxtPostnom.Location = new System.Drawing.Point(162, 96);
-            this.TxtPostnom.Name = "TxtPostnom";
-            this.TxtPostnom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPostnom.Properties.Appearance.Options.UseFont = true;
-            this.TxtPostnom.Size = new System.Drawing.Size(270, 26);
-            this.TxtPostnom.TabIndex = 19;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(35, 134);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(68, 20);
-            this.labelControl3.TabIndex = 22;
-            this.labelControl3.Text = "Prénom : ";
-            // 
-            // TxtPrenom
-            // 
-            this.TxtPrenom.Enabled = false;
-            this.TxtPrenom.Location = new System.Drawing.Point(162, 131);
-            this.TxtPrenom.Name = "TxtPrenom";
-            this.TxtPrenom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrenom.Properties.Appearance.Options.UseFont = true;
-            this.TxtPrenom.Size = new System.Drawing.Size(270, 26);
-            this.TxtPrenom.TabIndex = 21;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.LblEtatLecture);
-            this.groupBox3.Controls.Add(this.LblPassword);
-            this.groupBox3.Controls.Add(this.LblNumCard);
-            this.groupBox3.Location = new System.Drawing.Point(478, 22);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(413, 135);
-            this.groupBox3.TabIndex = 23;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Lecture de la carte";
-            // 
-            // separatorControl1
-            // 
-            this.separatorControl1.Location = new System.Drawing.Point(35, 168);
-            this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(856, 23);
-            this.separatorControl1.TabIndex = 24;
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(603, 197);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(28, 30);
+            this.labelControl5.TabIndex = 27;
+            this.labelControl5.Text = "Fc";
             // 
             // labelControl4
             // 
@@ -462,35 +372,23 @@
             this.TxtMontant.Size = new System.Drawing.Size(222, 36);
             this.TxtMontant.TabIndex = 25;
             // 
-            // labelControl5
+            // separatorControl1
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(603, 197);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(28, 30);
-            this.labelControl5.TabIndex = 27;
-            this.labelControl5.Text = "Fc";
+            this.separatorControl1.Location = new System.Drawing.Point(35, 168);
+            this.separatorControl1.Name = "separatorControl1";
+            this.separatorControl1.Size = new System.Drawing.Size(856, 23);
+            this.separatorControl1.TabIndex = 24;
             // 
-            // LblNumCard
+            // groupBox3
             // 
-            this.LblNumCard.AutoSize = true;
-            this.LblNumCard.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNumCard.Location = new System.Drawing.Point(22, 103);
-            this.LblNumCard.Name = "LblNumCard";
-            this.LblNumCard.Size = new System.Drawing.Size(140, 22);
-            this.LblNumCard.TabIndex = 0;
-            this.LblNumCard.Text = "0000000000000";
-            // 
-            // LblPassword
-            // 
-            this.LblPassword.AutoSize = true;
-            this.LblPassword.Location = new System.Drawing.Point(324, 107);
-            this.LblPassword.Name = "LblPassword";
-            this.LblPassword.Size = new System.Drawing.Size(69, 17);
-            this.LblPassword.TabIndex = 1;
-            this.LblPassword.Text = "Password";
-            this.LblPassword.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.groupBox3.Controls.Add(this.LblEtatLecture);
+            this.groupBox3.Controls.Add(this.LblNumCard);
+            this.groupBox3.Location = new System.Drawing.Point(478, 22);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(413, 135);
+            this.groupBox3.TabIndex = 23;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Lecture de la carte";
             // 
             // LblEtatLecture
             // 
@@ -503,6 +401,96 @@
             this.LblEtatLecture.Size = new System.Drawing.Size(229, 32);
             this.LblEtatLecture.TabIndex = 2;
             this.LblEtatLecture.Text = "Etat de la lectutre";
+            // 
+            // LblNumCard
+            // 
+            this.LblNumCard.AutoSize = true;
+            this.LblNumCard.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNumCard.Location = new System.Drawing.Point(22, 103);
+            this.LblNumCard.Name = "LblNumCard";
+            this.LblNumCard.Size = new System.Drawing.Size(140, 22);
+            this.LblNumCard.TabIndex = 0;
+            this.LblNumCard.Text = "0000000000000";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(35, 134);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(68, 20);
+            this.labelControl3.TabIndex = 22;
+            this.labelControl3.Text = "Prénom : ";
+            // 
+            // TxtPrenom
+            // 
+            this.TxtPrenom.Enabled = false;
+            this.TxtPrenom.Location = new System.Drawing.Point(162, 131);
+            this.TxtPrenom.Name = "TxtPrenom";
+            this.TxtPrenom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPrenom.Properties.Appearance.Options.UseFont = true;
+            this.TxtPrenom.Size = new System.Drawing.Size(270, 26);
+            this.TxtPrenom.TabIndex = 21;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(35, 99);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(74, 20);
+            this.labelControl2.TabIndex = 20;
+            this.labelControl2.Text = "Postnom : ";
+            // 
+            // TxtPostnom
+            // 
+            this.TxtPostnom.Enabled = false;
+            this.TxtPostnom.Location = new System.Drawing.Point(162, 96);
+            this.TxtPostnom.Name = "TxtPostnom";
+            this.TxtPostnom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPostnom.Properties.Appearance.Options.UseFont = true;
+            this.TxtPostnom.Size = new System.Drawing.Size(270, 26);
+            this.TxtPostnom.TabIndex = 19;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(35, 64);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(46, 20);
+            this.labelControl1.TabIndex = 18;
+            this.labelControl1.Text = "Nom : ";
+            // 
+            // TxtNom
+            // 
+            this.TxtNom.Enabled = false;
+            this.TxtNom.Location = new System.Drawing.Point(162, 61);
+            this.TxtNom.Name = "TxtNom";
+            this.TxtNom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNom.Properties.Appearance.Options.UseFont = true;
+            this.TxtNom.Size = new System.Drawing.Size(270, 26);
+            this.TxtNom.TabIndex = 17;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Location = new System.Drawing.Point(35, 29);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(82, 20);
+            this.labelControl8.TabIndex = 16;
+            this.labelControl8.Text = "Matricule : ";
+            // 
+            // TxtMatricule
+            // 
+            this.TxtMatricule.Enabled = false;
+            this.TxtMatricule.Location = new System.Drawing.Point(162, 26);
+            this.TxtMatricule.Name = "TxtMatricule";
+            this.TxtMatricule.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMatricule.Properties.Appearance.Options.UseFont = true;
+            this.TxtMatricule.Size = new System.Drawing.Size(270, 26);
+            this.TxtMatricule.TabIndex = 15;
             // 
             // FormRechargement
             // 
@@ -524,14 +512,14 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMatricule.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPrenom.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMontant.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMontant.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPrenom.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMatricule.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -583,7 +571,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.TextEdit TxtMatricule;
         private DevExpress.XtraEditors.LabelControl LblEtatLecture;
-        private System.Windows.Forms.Label LblPassword;
         private System.Windows.Forms.Label LblNumCard;
     }
 }

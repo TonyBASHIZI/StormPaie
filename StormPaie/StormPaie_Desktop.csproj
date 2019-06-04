@@ -140,6 +140,20 @@
     <None Include="Resources\delete.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\info_16x16.png" />
+    <None Include="Resources\info_32x32.png" />
+    <None Include="Resources\editpagehf_16x16.png" />
+    <None Include="Resources\editpagehf_32x32.png" />
+    <None Include="Resources\currency_16x16.png" />
+    <None Include="Resources\currency_32x32.png" />
+    <None Include="Resources\saveas_16x16.png" />
+    <None Include="Resources\saveas_32x32.png" />
+    <None Include="Resources\customization_16x16.png" />
+    <None Include="Resources\bringforward_16x16.png" />
+    <None Include="Resources\employee_32x32.png" />
+    <None Include="Resources\employee_16x16.png" />
+    <None Include="Resources\home_16x16.png" />
+    <None Include="Resources\home_32x32.png" />
     <Content Include="storm.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
