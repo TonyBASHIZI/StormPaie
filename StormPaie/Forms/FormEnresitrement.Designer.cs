@@ -59,50 +59,50 @@
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.TxtNom = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtSearchControle = new DevExpress.XtraEditors.SearchControl();
-            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtPostnom = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtSexe = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtTelephone = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtReseau = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtAdresse = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtPrenom = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.TxtAffiliation = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.TxtMatricule = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtTelephone = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtSexe = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtPostnom = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
+            this.TxtSearchControle = new DevExpress.XtraEditors.SearchControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtNom = new DevExpress.XtraEditors.TextEdit();
+            this.CmbNumCard = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.GcEnregistrement = new DevExpress.XtraGrid.GridControl();
             this.GvEnregistrement = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtPrenom = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtAdresse = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtReseau = new DevExpress.XtraEditors.TextEdit();
-            this.CmbNumCard = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSearchControle.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSexe.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtTelephone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtReseau.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdresse.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPrenom.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAffiliation.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMatricule.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelephone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSexe.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSearchControle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CmbNumCard.Properties)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GcEnregistrement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GvEnregistrement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPrenom.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAdresse.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtReseau.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CmbNumCard.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -354,136 +354,65 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Information sur le client";
             // 
-            // groupBox2
+            // labelControl11
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.GcEnregistrement);
-            this.groupBox2.Location = new System.Drawing.Point(12, 230);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(960, 319);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Location = new System.Drawing.Point(653, 154);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(66, 20);
+            this.labelControl11.TabIndex = 22;
+            this.labelControl11.Text = "Réseau : ";
             // 
-            // TxtNom
+            // TxtReseau
             // 
-            this.TxtNom.Enabled = false;
-            this.TxtNom.Location = new System.Drawing.Point(91, 87);
-            this.TxtNom.Name = "TxtNom";
-            this.TxtNom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNom.Properties.Appearance.Options.UseFont = true;
-            this.TxtNom.Size = new System.Drawing.Size(199, 26);
-            this.TxtNom.TabIndex = 0;
+            this.TxtReseau.Enabled = false;
+            this.TxtReseau.Location = new System.Drawing.Point(743, 151);
+            this.TxtReseau.Name = "TxtReseau";
+            this.TxtReseau.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtReseau.Properties.Appearance.Options.UseFont = true;
+            this.TxtReseau.Size = new System.Drawing.Size(199, 26);
+            this.TxtReseau.TabIndex = 21;
             // 
-            // labelControl1
+            // labelControl9
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(15, 29);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(94, 20);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Recherche : ";
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(321, 154);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(70, 20);
+            this.labelControl9.TabIndex = 20;
+            this.labelControl9.Text = "Adresse : ";
             // 
-            // TxtSearchControle
+            // TxtAdresse
             // 
-            this.TxtSearchControle.Location = new System.Drawing.Point(120, 26);
-            this.TxtSearchControle.Name = "TxtSearchControle";
-            this.TxtSearchControle.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.TxtSearchControle.Properties.Appearance.Options.UseFont = true;
-            this.TxtSearchControle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Repository.ClearButton(),
-            new DevExpress.XtraEditors.Repository.SearchButton()});
-            this.TxtSearchControle.Size = new System.Drawing.Size(299, 26);
-            this.TxtSearchControle.TabIndex = 2;
+            this.TxtAdresse.Enabled = false;
+            this.TxtAdresse.Location = new System.Drawing.Point(414, 151);
+            this.TxtAdresse.Name = "TxtAdresse";
+            this.TxtAdresse.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAdresse.Properties.Appearance.Options.UseFont = true;
+            this.TxtAdresse.Size = new System.Drawing.Size(199, 26);
+            this.TxtAdresse.TabIndex = 19;
             // 
-            // separatorControl1
+            // labelControl10
             // 
-            this.separatorControl1.Location = new System.Drawing.Point(6, 58);
-            this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(945, 23);
-            this.separatorControl1.TabIndex = 3;
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Location = new System.Drawing.Point(15, 154);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(68, 20);
+            this.labelControl10.TabIndex = 18;
+            this.labelControl10.Text = "Prénom : ";
             // 
-            // labelControl2
+            // TxtPrenom
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(15, 87);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(46, 20);
-            this.labelControl2.TabIndex = 4;
-            this.labelControl2.Text = "Nom : ";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(15, 122);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(74, 20);
-            this.labelControl3.TabIndex = 6;
-            this.labelControl3.Text = "Postnom : ";
-            // 
-            // TxtPostnom
-            // 
-            this.TxtPostnom.Enabled = false;
-            this.TxtPostnom.Location = new System.Drawing.Point(91, 119);
-            this.TxtPostnom.Name = "TxtPostnom";
-            this.TxtPostnom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPostnom.Properties.Appearance.Options.UseFont = true;
-            this.TxtPostnom.Size = new System.Drawing.Size(199, 26);
-            this.TxtPostnom.TabIndex = 5;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(321, 90);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(46, 20);
-            this.labelControl4.TabIndex = 8;
-            this.labelControl4.Text = "Sexe : ";
-            // 
-            // TxtSexe
-            // 
-            this.TxtSexe.Enabled = false;
-            this.TxtSexe.Location = new System.Drawing.Point(414, 87);
-            this.TxtSexe.Name = "TxtSexe";
-            this.TxtSexe.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSexe.Properties.Appearance.Options.UseFont = true;
-            this.TxtSexe.Size = new System.Drawing.Size(199, 26);
-            this.TxtSexe.TabIndex = 7;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(572, 29);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(75, 20);
-            this.labelControl5.TabIndex = 10;
-            this.labelControl5.Text = "N° Carte : ";
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(321, 122);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(88, 20);
-            this.labelControl6.TabIndex = 12;
-            this.labelControl6.Text = "Téléphone : ";
-            // 
-            // TxtTelephone
-            // 
-            this.TxtTelephone.Enabled = false;
-            this.TxtTelephone.Location = new System.Drawing.Point(414, 119);
-            this.TxtTelephone.Name = "TxtTelephone";
-            this.TxtTelephone.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelephone.Properties.Appearance.Options.UseFont = true;
-            this.TxtTelephone.Size = new System.Drawing.Size(199, 26);
-            this.TxtTelephone.TabIndex = 11;
+            this.TxtPrenom.Enabled = false;
+            this.TxtPrenom.Location = new System.Drawing.Point(91, 151);
+            this.TxtPrenom.Name = "TxtPrenom";
+            this.TxtPrenom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPrenom.Properties.Appearance.Options.UseFont = true;
+            this.TxtPrenom.Size = new System.Drawing.Size(199, 26);
+            this.TxtPrenom.TabIndex = 17;
             // 
             // labelControl7
             // 
@@ -525,6 +454,149 @@
             this.TxtMatricule.Size = new System.Drawing.Size(199, 26);
             this.TxtMatricule.TabIndex = 13;
             // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(321, 122);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(88, 20);
+            this.labelControl6.TabIndex = 12;
+            this.labelControl6.Text = "Téléphone : ";
+            // 
+            // TxtTelephone
+            // 
+            this.TxtTelephone.Enabled = false;
+            this.TxtTelephone.Location = new System.Drawing.Point(414, 119);
+            this.TxtTelephone.Name = "TxtTelephone";
+            this.TxtTelephone.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTelephone.Properties.Appearance.Options.UseFont = true;
+            this.TxtTelephone.Size = new System.Drawing.Size(199, 26);
+            this.TxtTelephone.TabIndex = 11;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(572, 29);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(75, 20);
+            this.labelControl5.TabIndex = 10;
+            this.labelControl5.Text = "N° Carte : ";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(321, 90);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(46, 20);
+            this.labelControl4.TabIndex = 8;
+            this.labelControl4.Text = "Sexe : ";
+            // 
+            // TxtSexe
+            // 
+            this.TxtSexe.Enabled = false;
+            this.TxtSexe.Location = new System.Drawing.Point(414, 87);
+            this.TxtSexe.Name = "TxtSexe";
+            this.TxtSexe.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSexe.Properties.Appearance.Options.UseFont = true;
+            this.TxtSexe.Size = new System.Drawing.Size(199, 26);
+            this.TxtSexe.TabIndex = 7;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(15, 122);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(74, 20);
+            this.labelControl3.TabIndex = 6;
+            this.labelControl3.Text = "Postnom : ";
+            // 
+            // TxtPostnom
+            // 
+            this.TxtPostnom.Enabled = false;
+            this.TxtPostnom.Location = new System.Drawing.Point(91, 119);
+            this.TxtPostnom.Name = "TxtPostnom";
+            this.TxtPostnom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPostnom.Properties.Appearance.Options.UseFont = true;
+            this.TxtPostnom.Size = new System.Drawing.Size(199, 26);
+            this.TxtPostnom.TabIndex = 5;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(15, 87);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(46, 20);
+            this.labelControl2.TabIndex = 4;
+            this.labelControl2.Text = "Nom : ";
+            // 
+            // separatorControl1
+            // 
+            this.separatorControl1.Location = new System.Drawing.Point(6, 58);
+            this.separatorControl1.Name = "separatorControl1";
+            this.separatorControl1.Size = new System.Drawing.Size(945, 23);
+            this.separatorControl1.TabIndex = 3;
+            // 
+            // TxtSearchControle
+            // 
+            this.TxtSearchControle.Location = new System.Drawing.Point(120, 26);
+            this.TxtSearchControle.Name = "TxtSearchControle";
+            this.TxtSearchControle.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.TxtSearchControle.Properties.Appearance.Options.UseFont = true;
+            this.TxtSearchControle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.TxtSearchControle.Size = new System.Drawing.Size(299, 26);
+            this.TxtSearchControle.TabIndex = 2;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(15, 29);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(94, 20);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Recherche : ";
+            // 
+            // TxtNom
+            // 
+            this.TxtNom.Enabled = false;
+            this.TxtNom.Location = new System.Drawing.Point(91, 87);
+            this.TxtNom.Name = "TxtNom";
+            this.TxtNom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNom.Properties.Appearance.Options.UseFont = true;
+            this.TxtNom.Size = new System.Drawing.Size(199, 26);
+            this.TxtNom.TabIndex = 0;
+            // 
+            // CmbNumCard
+            // 
+            this.CmbNumCard.Location = new System.Drawing.Point(653, 26);
+            this.CmbNumCard.Name = "CmbNumCard";
+            this.CmbNumCard.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbNumCard.Properties.Appearance.Options.UseFont = true;
+            this.CmbNumCard.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.CmbNumCard.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.CmbNumCard.Size = new System.Drawing.Size(289, 18);
+            this.CmbNumCard.TabIndex = 9;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.GcEnregistrement);
+            this.groupBox2.Location = new System.Drawing.Point(12, 230);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(960, 319);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            // 
             // GcEnregistrement
             // 
             this.GcEnregistrement.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -542,77 +614,6 @@
             this.GvEnregistrement.Name = "GvEnregistrement";
             this.GvEnregistrement.OptionsView.ShowGroupPanel = false;
             // 
-            // labelControl10
-            // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(15, 154);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(68, 20);
-            this.labelControl10.TabIndex = 18;
-            this.labelControl10.Text = "Prénom : ";
-            // 
-            // TxtPrenom
-            // 
-            this.TxtPrenom.Enabled = false;
-            this.TxtPrenom.Location = new System.Drawing.Point(91, 151);
-            this.TxtPrenom.Name = "TxtPrenom";
-            this.TxtPrenom.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrenom.Properties.Appearance.Options.UseFont = true;
-            this.TxtPrenom.Size = new System.Drawing.Size(199, 26);
-            this.TxtPrenom.TabIndex = 17;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(321, 154);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(70, 20);
-            this.labelControl9.TabIndex = 20;
-            this.labelControl9.Text = "Adresse : ";
-            // 
-            // TxtAdresse
-            // 
-            this.TxtAdresse.Enabled = false;
-            this.TxtAdresse.Location = new System.Drawing.Point(414, 151);
-            this.TxtAdresse.Name = "TxtAdresse";
-            this.TxtAdresse.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtAdresse.Properties.Appearance.Options.UseFont = true;
-            this.TxtAdresse.Size = new System.Drawing.Size(199, 26);
-            this.TxtAdresse.TabIndex = 19;
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(653, 154);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(66, 20);
-            this.labelControl11.TabIndex = 22;
-            this.labelControl11.Text = "Réseau : ";
-            // 
-            // TxtReseau
-            // 
-            this.TxtReseau.Enabled = false;
-            this.TxtReseau.Location = new System.Drawing.Point(743, 151);
-            this.TxtReseau.Name = "TxtReseau";
-            this.TxtReseau.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtReseau.Properties.Appearance.Options.UseFont = true;
-            this.TxtReseau.Size = new System.Drawing.Size(199, 26);
-            this.TxtReseau.TabIndex = 21;
-            // 
-            // CmbNumCard
-            // 
-            this.CmbNumCard.Location = new System.Drawing.Point(653, 26);
-            this.CmbNumCard.Name = "CmbNumCard";
-            this.CmbNumCard.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbNumCard.Properties.Appearance.Options.UseFont = true;
-            this.CmbNumCard.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CmbNumCard.Size = new System.Drawing.Size(289, 26);
-            this.CmbNumCard.TabIndex = 9;
-            // 
             // FormEnresitrement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -627,26 +628,27 @@
             this.Name = "FormEnresitrement";
             this.ShowInTaskbar = false;
             this.Text = "Enresitrement";
+            this.Load += new System.EventHandler(this.FormEnresitrement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSearchControle.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSexe.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtTelephone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtReseau.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdresse.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPrenom.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAffiliation.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMatricule.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelephone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSexe.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSearchControle.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CmbNumCard.Properties)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GcEnregistrement)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GvEnregistrement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPrenom.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAdresse.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtReseau.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CmbNumCard.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

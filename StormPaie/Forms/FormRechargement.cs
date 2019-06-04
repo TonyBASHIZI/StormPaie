@@ -15,5 +15,25 @@ namespace StormPaie.Forms
         {
             InitializeComponent();
         }
+
+        private void FormRechargement_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+
+        }        
     }
 }

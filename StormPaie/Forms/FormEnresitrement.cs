@@ -16,6 +16,11 @@ namespace StormPaie.Forms
             InitializeComponent();
         }
 
+        private void FormEnresitrement_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void BtnAdd_Click(object sender, EventArgs e)
         {
 
@@ -29,6 +34,6 @@ namespace StormPaie.Forms
         private void BtnDelete_Click(object sender, EventArgs e)
         {
 
-        }
+        }      
     }
 }
