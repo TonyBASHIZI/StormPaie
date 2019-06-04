@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StormPaie", "StormPaie\StormPaie.csproj", "{52B0EE61-DBAC-4EE5-ABF7-8E551A195A64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StormPaie_Desktop", "StormPaie\StormPaie_Desktop.csproj", "{52B0EE61-DBAC-4EE5-ABF7-8E551A195A64}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StormPaie_Lib", "StormPaie_Lib\StormPaie_Lib.csproj", "{4C285DC0-DFFC-42EF-A7EA-7C2E59ACBD10}"
 EndProject

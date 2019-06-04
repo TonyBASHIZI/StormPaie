@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StormPaie.Properties {
+namespace StormPaie_Desktop.Properties {
     using System;
     
     
