@@ -361,7 +361,6 @@
             // 
             // TxtMontant
             // 
-            this.TxtMontant.Enabled = false;
             this.TxtMontant.Location = new System.Drawing.Point(375, 194);
             this.TxtMontant.Name = "TxtMontant";
             this.TxtMontant.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -408,9 +407,9 @@
             this.LblNumCard.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNumCard.Location = new System.Drawing.Point(22, 103);
             this.LblNumCard.Name = "LblNumCard";
-            this.LblNumCard.Size = new System.Drawing.Size(140, 22);
+            this.LblNumCard.Size = new System.Drawing.Size(20, 22);
             this.LblNumCard.TabIndex = 0;
-            this.LblNumCard.Text = "0000000000000";
+            this.LblNumCard.Text = "0";
             // 
             // labelControl3
             // 

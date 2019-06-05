@@ -9,6 +9,9 @@ namespace StormPaie_Lib.Classes
 {
     public class Glossaire
     {
+        private IDbCommand cmd;
+        private IDataReader dr;
+
         private static Glossaire _instance = null;
 
         public static Glossaire Instance
@@ -34,15 +37,30 @@ namespace StormPaie_Lib.Classes
             }
         }
 
-        public IDbDataParameter GetParameter(IDbCommand command, string parameter, DbType type, int size, object value)
+        private void SetParameter(IDbCommand cmd, string name, DbType type, int length, object value)
         {
-            IDbDataParameter param = command.CreateParameter();
-            param.ParameterName = parameter;
-            param.DbType = type;
-            param.Size = size;
-            param.Value = value;
+            IDbDataParameter param = cmd.CreateParameter();
 
-            return param;
+            param.ParameterName = name;
+            param.DbType = type;
+            param.Size = length;
+
+            if (value == null)
+            {
+                if (!param.IsNullable)
+                {
+                    param.DbType = DbType.String;
+                }
+
+                param.Value = DBNull.Value;
+            }
+            else
+            {
+                param.Value = value;
+            }
+
+            cmd.Parameters.Add(param);
         }
+
     }
 }

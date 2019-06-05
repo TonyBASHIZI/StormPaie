@@ -7,6 +7,7 @@ using System.Text;
 using System.Linq;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
 
 namespace StormPaie.Forms
 {
@@ -26,12 +27,61 @@ namespace StormPaie.Forms
             form.ShowDialog();
         }
 
-        private void BarBtnHome_ItemClick(object sender, ItemClickEventArgs e)
+        private void SelectForms(string name)
         {
-            foreach (Form childForm in MdiChildren)
-            {
-                childForm.Close();
+            try
+            {               
+                switch (name)
+                {                   
+                    case "Enreg":
+
+                        form = new FormEnresitrement();
+                        form.MdiParent = this;
+                        form.Show();
+                        break;
+
+                    case "Recharge":
+
+                        form = new FormRechargement();
+                        form.MdiParent = this;
+                        form.Show();
+                        break;
+
+                    case "Card":
+
+                        this.Cursor = Cursors.WaitCursor;
+                        form = new FormCardNFC();
+                        form.ShowDialog();
+                        this.Cursor = Cursors.Default;
+                        break;
+
+                    case "Home":
+                        foreach (Form childForm in MdiChildren)
+                        {
+                            childForm.Close();
+                        }
+                        PanelAccueil.Visible = true;
+                        break;
+                }
             }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+
+        private void RibbonButtons_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            string s = e.Item.Name.Substring(2);
+            PanelAccueil.Visible = false;
+            SelectForms(s);
+        }
+
+        private void NavBarControlItems_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            string s = e.Link.Item.Name.Substring(2);
+            PanelAccueil.Visible = false;
+            SelectForms(s);
         }
     }
 }
