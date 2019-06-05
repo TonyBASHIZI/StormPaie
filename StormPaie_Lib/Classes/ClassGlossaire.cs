@@ -62,5 +62,17 @@ namespace StormPaie_Lib.Classes
             cmd.Parameters.Add(param);
         }
 
+        #region Enregistrement
+
+
+
+        #endregion
+
+        #region Recharge
+
+
+
+        #endregion
+
     }
 }
