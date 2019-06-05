@@ -6,17 +6,22 @@ using System.Data;
 using MySql.Data.MySqlClient;
 using System.Linq;
 using System.Text;
+using StormPaie_Lib;
 using DevExpress.XtraEditors;
 
 namespace StormPaie_Lib.Classes
 {
     public class Glossaire
     {
-        private IDbCommand cmd;
-        private IDataReader dr;
-        private IDataAdapter adapter;
-
+       
+        MySqlConnection con = null;
+        MySqlCommand cmd = null;
+        MySqlDataAdapter dt = null;
+        MySqlDataReader dr = null;
+        Connection cnx;
+        private string str, code_isnt;
         private static Glossaire _instance = null;
+        
 
         public static Glossaire Instance
         {
@@ -34,12 +39,12 @@ namespace StormPaie_Lib.Classes
         {
             try
             {
-                if (ImplementConnection.Instance.Conn.State == ConnectionState.Closed)
-                    ImplementConnection.Instance.Conn.Open();
+                cnx = new Connection(); cnx.Connect();
+                con = new MySqlConnection(cnx.path);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw new Exception("l'un de vos fichiers de configuration est incorrect");
             }
         }
 
@@ -74,12 +79,12 @@ namespace StormPaie_Lib.Classes
 
             try
             {
-                using (cmd = ImplementConnection.Instance.Conn.CreateCommand())
+                using (cmd = con.CreateCommand())
                 {
                     cmd.CommandText = " SELECT " + field + " FROM " + table;
-                    adapter = new MySqlDataAdapter((MySqlCommand)cmd);
+                    dt = new MySqlDataAdapter((MySqlCommand)cmd);
                     DataSet ds = new DataSet();
-                    adapter.Fill(ds);
+                    dt.Fill(ds);
                     grid.DataSource = ds.Tables[0];
                 }
             }
@@ -101,7 +106,7 @@ namespace StormPaie_Lib.Classes
 
             try
             {
-                using (cmd = ImplementConnection.Instance.Conn.CreateCommand())
+                using (cmd = con.CreateCommand())
                 {
                     cmd.CommandText = " SELECT " + field + " FROM " + table;
 
@@ -133,7 +138,7 @@ namespace StormPaie_Lib.Classes
 
             InitializeConnection();
 
-            using (cmd = ImplementConnection.Instance.Conn.CreateCommand())
+            using (cmd = con.CreateCommand())
             {
                 string query = " SELECT nom, postnom, prenom, sexe, " +
                     "adresse, tel, matr_client, affiliation, reseaux, id_carte " +

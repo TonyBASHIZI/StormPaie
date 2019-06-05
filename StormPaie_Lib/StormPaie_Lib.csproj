@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\ClassClient.cs" />
+    <Compile Include="Classes\ClassConstants.cs" />
     <Compile Include="Classes\ClassGlossaire.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

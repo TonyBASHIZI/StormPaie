@@ -47,9 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassConnection.cs" />
-    <Compile Include="ClassImplementConnection.cs" />
-    <Compile Include="EnumConnectionType.cs" />
-    <Compile Include="IConnection.cs" />
+    <Compile Include="ClassConstants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
