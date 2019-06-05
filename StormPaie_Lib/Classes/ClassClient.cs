@@ -11,7 +11,7 @@ namespace StormPaie_Lib.Classes
         {
         }
 
-        public string Matricule { get; }
+        public string Matricule { get; set; }
 
         public string IdNFC { get; set; }
 

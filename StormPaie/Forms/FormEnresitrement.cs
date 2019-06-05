@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StormPaie_Lib.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,14 +25,14 @@ namespace StormPaie.Forms
 
         private void LoadCombos()
         {
-            /// TODO: Load id NFC in Combobox
-            throw new NotImplementedException();
+            Glossaire.Instance.GetCombosData(CmbNumCard, "id_carte", "t_client");
         }
 
         private void LoadGridControle()
         {
-            /// TODO: Load Clients in the GridControle
-            throw new NotImplementedException();
+            string field = " nom, postnom, prenom, sexe, adresse, affiliation, " +
+                "tel, reseaux, id_carte, matr_client ";
+            Glossaire.Instance.GetDatas(GcEnregistrement, field, "t_client");
         }
 
         private void ClearFields()
