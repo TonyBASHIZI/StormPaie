@@ -248,6 +248,7 @@
             // BtnSave
             // 
             this.BtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnSave.Enabled = false;
             this.BtnSave.Image = global::StormPaie.Properties.Resources.Save;
             this.BtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnSave.Name = "BtnSave";
@@ -278,6 +279,7 @@
             // BtnDelete
             // 
             this.BtnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnDelete.Enabled = false;
             this.BtnDelete.Image = global::StormPaie.Properties.Resources.delete;
             this.BtnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnDelete.Name = "BtnDelete";

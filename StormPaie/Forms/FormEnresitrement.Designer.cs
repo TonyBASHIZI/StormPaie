@@ -48,16 +48,16 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.BtnSave = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+            this.BtnSave = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.TxtReseau = new DevExpress.XtraEditors.TextEdit();
@@ -79,12 +79,22 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
             this.TxtSearchControle = new DevExpress.XtraEditors.SearchControl();
+            this.GcEnregistrement = new DevExpress.XtraGrid.GridControl();
+            this.GvEnregistrement = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.GColMatricule = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GColNom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GColPostnom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GColPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GColSexe = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GColTel = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GColAdresse = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GColAffiliation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GColReseau = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GColIdNFC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.TxtNom = new DevExpress.XtraEditors.TextEdit();
             this.CmbNumCard = new DevExpress.XtraEditors.ComboBoxEdit();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.GcEnregistrement = new DevExpress.XtraGrid.GridControl();
-            this.GvEnregistrement = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -98,11 +108,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSearchControle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GcEnregistrement)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GvEnregistrement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbNumCard.Properties)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GcEnregistrement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GvEnregistrement)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -131,13 +141,13 @@
             this.BtnSave,
             this.toolStripSeparator8,
             this.toolStripSeparator9,
-            this.toolStripSeparator10,
-            this.toolStripSeparator11,
-            this.BtnDelete,
             this.toolStripSeparator12,
             this.toolStripSeparator13,
-            this.toolStripSeparator14,
-            this.toolStripSeparator15});
+            this.BtnDelete,
+            this.toolStripSeparator16,
+            this.toolStripSeparator17,
+            this.toolStripSeparator18,
+            this.toolStripSeparator19});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -262,16 +272,6 @@
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
             // 
-            // BtnSave
-            // 
-            this.BtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnSave.Image = global::StormPaie.Properties.Resources.Save;
-            this.BtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(23, 22);
-            this.BtnSave.Text = "Enregistrer";
-            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
-            // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
@@ -282,19 +282,10 @@
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripSeparator10
-            // 
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 25);
-            // 
             // BtnDelete
             // 
             this.BtnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnDelete.Enabled = false;
             this.BtnDelete.Image = global::StormPaie.Properties.Resources.delete;
             this.BtnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnDelete.Name = "BtnDelete";
@@ -312,15 +303,36 @@
             this.toolStripSeparator13.Name = "toolStripSeparator13";
             this.toolStripSeparator13.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripSeparator14
+            // BtnSave
             // 
-            this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(6, 25);
+            this.BtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnSave.Enabled = false;
+            this.BtnSave.Image = global::StormPaie.Properties.Resources.Save;
+            this.BtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(23, 22);
+            this.BtnSave.Text = "Enregistrer";
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
-            // toolStripSeparator15
+            // toolStripSeparator16
             // 
-            this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator16.Name = "toolStripSeparator16";
+            this.toolStripSeparator16.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator17
+            // 
+            this.toolStripSeparator17.Name = "toolStripSeparator17";
+            this.toolStripSeparator17.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator18
+            // 
+            this.toolStripSeparator18.Name = "toolStripSeparator18";
+            this.toolStripSeparator18.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator19
+            // 
+            this.toolStripSeparator19.Name = "toolStripSeparator19";
+            this.toolStripSeparator19.Size = new System.Drawing.Size(6, 25);
             // 
             // groupBox1
             // 
@@ -543,6 +555,7 @@
             // 
             // TxtSearchControle
             // 
+            this.TxtSearchControle.Client = this.GcEnregistrement;
             this.TxtSearchControle.Location = new System.Drawing.Point(120, 26);
             this.TxtSearchControle.Name = "TxtSearchControle";
             this.TxtSearchControle.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F);
@@ -550,8 +563,121 @@
             this.TxtSearchControle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Repository.ClearButton(),
             new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.TxtSearchControle.Properties.Client = this.GcEnregistrement;
             this.TxtSearchControle.Size = new System.Drawing.Size(299, 26);
             this.TxtSearchControle.TabIndex = 2;
+            // 
+            // GcEnregistrement
+            // 
+            this.GcEnregistrement.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GcEnregistrement.Location = new System.Drawing.Point(3, 19);
+            this.GcEnregistrement.MainView = this.GvEnregistrement;
+            this.GcEnregistrement.Name = "GcEnregistrement";
+            this.GcEnregistrement.Size = new System.Drawing.Size(954, 297);
+            this.GcEnregistrement.TabIndex = 0;
+            this.GcEnregistrement.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GvEnregistrement});
+            this.GcEnregistrement.DoubleClick += new System.EventHandler(this.GcEnregistrement_DoubleClick);
+            // 
+            // GvEnregistrement
+            // 
+            this.GvEnregistrement.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.GColMatricule,
+            this.GColNom,
+            this.GColPostnom,
+            this.GColPrenom,
+            this.GColSexe,
+            this.GColTel,
+            this.GColAdresse,
+            this.GColAffiliation,
+            this.GColReseau,
+            this.GColIdNFC});
+            this.GvEnregistrement.GridControl = this.GcEnregistrement;
+            this.GvEnregistrement.Name = "GvEnregistrement";
+            this.GvEnregistrement.OptionsBehavior.Editable = false;
+            this.GvEnregistrement.OptionsFind.AlwaysVisible = true;
+            this.GvEnregistrement.OptionsFind.FindNullPrompt = "Enter le text à rechercher ...";
+            this.GvEnregistrement.OptionsView.ShowGroupPanel = false;
+            // 
+            // GColMatricule
+            // 
+            this.GColMatricule.Caption = "Matricule";
+            this.GColMatricule.FieldName = "matr_client";
+            this.GColMatricule.Name = "GColMatricule";
+            this.GColMatricule.Visible = true;
+            this.GColMatricule.VisibleIndex = 0;
+            // 
+            // GColNom
+            // 
+            this.GColNom.Caption = "Nom";
+            this.GColNom.FieldName = "nom";
+            this.GColNom.Name = "GColNom";
+            this.GColNom.Visible = true;
+            this.GColNom.VisibleIndex = 1;
+            // 
+            // GColPostnom
+            // 
+            this.GColPostnom.Caption = "Postnom";
+            this.GColPostnom.FieldName = "postnom";
+            this.GColPostnom.Name = "GColPostnom";
+            this.GColPostnom.Visible = true;
+            this.GColPostnom.VisibleIndex = 2;
+            // 
+            // GColPrenom
+            // 
+            this.GColPrenom.Caption = "Prénom";
+            this.GColPrenom.FieldName = "prenom";
+            this.GColPrenom.Name = "GColPrenom";
+            this.GColPrenom.Visible = true;
+            this.GColPrenom.VisibleIndex = 3;
+            // 
+            // GColSexe
+            // 
+            this.GColSexe.Caption = "Sexe";
+            this.GColSexe.FieldName = "sexe";
+            this.GColSexe.Name = "GColSexe";
+            this.GColSexe.Visible = true;
+            this.GColSexe.VisibleIndex = 4;
+            // 
+            // GColTel
+            // 
+            this.GColTel.Caption = "Téléphone";
+            this.GColTel.FieldName = "tel";
+            this.GColTel.Name = "GColTel";
+            this.GColTel.Visible = true;
+            this.GColTel.VisibleIndex = 5;
+            // 
+            // GColAdresse
+            // 
+            this.GColAdresse.Caption = "Adresse";
+            this.GColAdresse.FieldName = "adresse";
+            this.GColAdresse.Name = "GColAdresse";
+            this.GColAdresse.Visible = true;
+            this.GColAdresse.VisibleIndex = 6;
+            // 
+            // GColAffiliation
+            // 
+            this.GColAffiliation.Caption = "Affiliation";
+            this.GColAffiliation.FieldName = "affiliation";
+            this.GColAffiliation.Name = "GColAffiliation";
+            this.GColAffiliation.Visible = true;
+            this.GColAffiliation.VisibleIndex = 7;
+            // 
+            // GColReseau
+            // 
+            this.GColReseau.Caption = "Réseau";
+            this.GColReseau.FieldName = "reseaux";
+            this.GColReseau.Name = "GColReseau";
+            this.GColReseau.Visible = true;
+            this.GColReseau.VisibleIndex = 8;
+            // 
+            // GColIdNFC
+            // 
+            this.GColIdNFC.Caption = "ID Carte";
+            this.GColIdNFC.FieldName = "id_carte";
+            this.GColIdNFC.Name = "GColIdNFC";
+            this.GColIdNFC.Visible = true;
+            this.GColIdNFC.VisibleIndex = 9;
             // 
             // labelControl1
             // 
@@ -575,14 +701,14 @@
             // 
             // CmbNumCard
             // 
-            this.CmbNumCard.Location = new System.Drawing.Point(653, 26);
+            this.CmbNumCard.Location = new System.Drawing.Point(653, 21);
             this.CmbNumCard.Name = "CmbNumCard";
             this.CmbNumCard.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbNumCard.Properties.Appearance.Options.UseFont = true;
             this.CmbNumCard.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CmbNumCard.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.CmbNumCard.Size = new System.Drawing.Size(289, 18);
+            this.CmbNumCard.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.CmbNumCard.Size = new System.Drawing.Size(289, 26);
             this.CmbNumCard.TabIndex = 9;
             // 
             // groupBox2
@@ -596,23 +722,7 @@
             this.groupBox2.Size = new System.Drawing.Size(960, 319);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            // 
-            // GcEnregistrement
-            // 
-            this.GcEnregistrement.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GcEnregistrement.Location = new System.Drawing.Point(3, 19);
-            this.GcEnregistrement.MainView = this.GvEnregistrement;
-            this.GcEnregistrement.Name = "GcEnregistrement";
-            this.GcEnregistrement.Size = new System.Drawing.Size(954, 297);
-            this.GcEnregistrement.TabIndex = 0;
-            this.GcEnregistrement.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GvEnregistrement});
-            // 
-            // GvEnregistrement
-            // 
-            this.GvEnregistrement.GridControl = this.GcEnregistrement;
-            this.GvEnregistrement.Name = "GvEnregistrement";
-            this.GvEnregistrement.OptionsView.ShowGroupPanel = false;
+            this.groupBox2.Text = "Les clients avec carte";
             // 
             // FormEnresitrement
             // 
@@ -644,11 +754,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtPostnom.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSearchControle.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GcEnregistrement)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GvEnregistrement)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbNumCard.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GcEnregistrement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GvEnregistrement)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -677,13 +787,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
         private System.Windows.Forms.ToolStripButton BtnDelete;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit TxtNom;
@@ -711,5 +817,19 @@
         private DevExpress.XtraEditors.ComboBoxEdit CmbNumCard;
         private DevExpress.XtraGrid.GridControl GcEnregistrement;
         private DevExpress.XtraGrid.Views.Grid.GridView GvEnregistrement;
+        private DevExpress.XtraGrid.Columns.GridColumn GColMatricule;
+        private DevExpress.XtraGrid.Columns.GridColumn GColNom;
+        private DevExpress.XtraGrid.Columns.GridColumn GColPostnom;
+        private DevExpress.XtraGrid.Columns.GridColumn GColPrenom;
+        private DevExpress.XtraGrid.Columns.GridColumn GColSexe;
+        private DevExpress.XtraGrid.Columns.GridColumn GColTel;
+        private DevExpress.XtraGrid.Columns.GridColumn GColAdresse;
+        private DevExpress.XtraGrid.Columns.GridColumn GColAffiliation;
+        private DevExpress.XtraGrid.Columns.GridColumn GColReseau;
+        private DevExpress.XtraGrid.Columns.GridColumn GColIdNFC;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
     }
 }

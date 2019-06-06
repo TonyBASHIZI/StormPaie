@@ -41,6 +41,7 @@ namespace StormPaie.Forms
             TxtPostnom.Text = String.Empty;
             TxtPrenom.Text = String.Empty;
             TxtMontant.Text = String.Empty;
+            BtnSave.Enabled = true;
             TxtMontant.Focus();
         }
 

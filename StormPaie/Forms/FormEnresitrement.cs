@@ -1,4 +1,5 @@
-﻿using StormPaie_Lib.Classes;
+﻿using DevExpress.XtraEditors;
+using StormPaie_Lib.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,20 +13,22 @@ namespace StormPaie.Forms
 {
     public partial class FormEnresitrement : Form
     {
+        private Client client = null;
+
         public FormEnresitrement()
         {
             InitializeComponent();
         }
 
         private void FormEnresitrement_Load(object sender, EventArgs e)
-        {
-            //LoadCombos();
-            //LoadGridControle();
+        {           
+            LoadGridControle();
+            LoadCombos();
         }
 
         private void LoadCombos()
         {
-            Glossaire.Instance.GetCombosData(CmbNumCard, "id_carte", "t_client");
+            Glossaire.Instance.GetCombosData(CmbNumCard, "id_carte", "carte");
         }
 
         private void LoadGridControle()
@@ -46,8 +49,12 @@ namespace StormPaie.Forms
             TxtReseau.Text = String.Empty;
             TxtSexe.Text = String.Empty;
             TxtTelephone.Text = String.Empty;
-            TxtSearchControle.Text = String.Empty;
+            TxtSearchControle.Text = String.Empty;    
+            
             TxtSearchControle.Focus();
+
+            BtnSave.Enabled = false;
+            BtnDelete.Enabled = false;
         }
 
         private bool IsNotEmpty()
@@ -69,8 +76,21 @@ namespace StormPaie.Forms
         {
             if (IsNotEmpty())
             {
-                /// TODO: Function save client
+                client = new Client
+                {
+                    IdNFC = CmbNumCard.Text,
+                    Matricule = TxtMatricule.Text
+                };
+
+                Glossaire.Instance.InsertUpdateClient(client);
+
+                LoadGridControle();
+                ClearFields();
             }
+            else
+            {
+                XtraMessageBox.Show("Remplissez tous les champs svp ! ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }           
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
@@ -79,6 +99,23 @@ namespace StormPaie.Forms
             {
                 /// TODO: Function delete client
             }
-        }      
+        }
+
+        private void GcEnregistrement_DoubleClick(object sender, EventArgs e)
+        {
+            TxtAdresse.Text = GvEnregistrement.GetFocusedRowCellValue("adresse").ToString();
+            TxtAffiliation.Text = GvEnregistrement.GetFocusedRowCellValue("affiliation").ToString();
+            TxtMatricule.Text = GvEnregistrement.GetFocusedRowCellValue("matr_client").ToString();
+            TxtNom.Text = GvEnregistrement.GetFocusedRowCellValue("nom").ToString();
+            TxtPostnom.Text = GvEnregistrement.GetFocusedRowCellValue("postnom").ToString();
+            TxtPrenom.Text = GvEnregistrement.GetFocusedRowCellValue("prenom").ToString();
+            TxtReseau.Text = GvEnregistrement.GetFocusedRowCellValue("reseaux").ToString();
+            TxtSexe.Text = GvEnregistrement.GetFocusedRowCellValue("sexe").ToString();
+            TxtTelephone.Text = GvEnregistrement.GetFocusedRowCellValue("tel").ToString();
+
+            BtnSave.Enabled = true;
+        }
+
+        
     }
 }

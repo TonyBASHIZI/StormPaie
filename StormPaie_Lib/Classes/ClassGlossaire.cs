@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using StormPaie_Lib;
 using DevExpress.XtraEditors;
+using System.Windows.Forms;
 
 namespace StormPaie_Lib.Classes
 {
@@ -41,6 +42,11 @@ namespace StormPaie_Lib.Classes
             {
                 cnx = new Connection(); cnx.Connect();
                 con = new MySqlConnection(cnx.path);
+
+                if (!con.State.ToString().ToLower().Equals("open"))
+                {
+                    con.Open();
+                }
             }
             catch (Exception)
             {
@@ -81,7 +87,7 @@ namespace StormPaie_Lib.Classes
             {
                 using (cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = " SELECT " + field + " FROM " + table;
+                    cmd.CommandText = " SELECT " + field + " FROM " + table + " ORDER BY matr_client DESC ";
                     dt = new MySqlDataAdapter((MySqlCommand)cmd);
                     DataSet ds = new DataSet();
                     dt.Fill(ds);
@@ -179,6 +185,34 @@ namespace StormPaie_Lib.Classes
                 }
 
                 return client;
+            }
+        }
+
+        public void InsertUpdateClient(Client client)
+        {
+            InitializeConnection();
+
+            try
+            {
+                using (cmd = con.CreateCommand())
+                {
+                    string query = null;
+
+                    query = "UPDATE t_client SET id_carte = @carte WHERE matr_client = @matricule ";
+
+                    cmd.CommandText = query;
+
+                    SetParameter(cmd, "@carte", DbType.String, 200, client.IdNFC);
+                    SetParameter(cmd, "@matricule", DbType.String, 200, client.Matricule);
+
+                    cmd.ExecuteNonQuery();
+
+                    XtraMessageBox.Show("Opération effectuée avec succès ! ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
 

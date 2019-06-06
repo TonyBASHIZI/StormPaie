@@ -157,6 +157,7 @@
     <None Include="Resources\employee_16x16.png" />
     <None Include="Resources\home_16x16.png" />
     <None Include="Resources\home_32x32.png" />
+    <None Include="Resources\edit.png" />
     <Content Include="storm.ico" />
   </ItemGroup>
   <ItemGroup>
