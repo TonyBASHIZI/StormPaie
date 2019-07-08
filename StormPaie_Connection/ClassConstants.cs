@@ -9,7 +9,7 @@ namespace StormPaie_Connection
         public class Database
         {
             public static string InitialDirectory = "C:\\cheminBdStorm";
-            public static string Path = "C:\\cheminBdStorm\\monChemin.txt";
+            public static string Path = @"C:\cheminBdStorm\monChemin.txt";
             public static string Backup = "C:\\BackupStorm";
 
         }

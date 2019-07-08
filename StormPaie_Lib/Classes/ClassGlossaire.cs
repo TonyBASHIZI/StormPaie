@@ -20,7 +20,7 @@ namespace StormPaie_Lib.Classes
         MySqlDataAdapter dt = null;
         MySqlDataReader dr = null;
         Connection cnx;
-        private string str, code_isnt;
+        //private string str, code_isnt;
         private static Glossaire _instance = null;
         
 
@@ -51,6 +51,8 @@ namespace StormPaie_Lib.Classes
             catch (Exception)
             {
                 throw new Exception("l'un de vos fichiers de configuration est incorrect");
+                //throw new Exception(ex.Message);
+
             }
         }
 
