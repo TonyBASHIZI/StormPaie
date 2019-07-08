@@ -129,6 +129,7 @@
             this.BtnConnection.Size = new System.Drawing.Size(216, 42);
             this.BtnConnection.TabIndex = 4;
             this.BtnConnection.Text = "Connection";
+            this.BtnConnection.Click += new System.EventHandler(this.BtnConnection_Click);
             // 
             // FormLogin
             // 

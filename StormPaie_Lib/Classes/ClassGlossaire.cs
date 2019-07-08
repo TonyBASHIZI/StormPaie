@@ -32,6 +32,46 @@ namespace StormPaie_Lib.Classes
             }
         }
 
+        public bool retrofitUsers_login(string username, string password)
+        {
+            InitializeConnection();
+            bool userExists = false;
+
+            try
+            {
+                using (cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = " SELECT * FROM retrofit_users where username=@username and password=@password ";
+                    SetParameter(cmd, "@username", DbType.String, 50, username);
+                    SetParameter(cmd, "@password", DbType.String, 50, password);
+                    dt = new MySqlDataAdapter((MySqlCommand)cmd);
+                    DataSet ds = new DataSet();
+                    dt.Fill(ds, "table");
+                    int rowCount = 0;
+                    rowCount = ds.Tables["table"].Rows.Count;
+                    if(rowCount<=0)
+                    {
+                        MessageBox.Show("Incorrect username or password");
+                        userExists = false;
+                    }
+                    else if(rowCount==1)
+                    {
+                        XtraMessageBox.Show("Thanks for logged in");
+                        userExists = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message);
+            }
+            finally
+            {
+
+            }
+            return userExists;
+        }
+
         #region Common
 
         public void InitializeConnection()
@@ -46,9 +86,10 @@ namespace StormPaie_Lib.Classes
                     con.Open();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw new Exception("L'un de vos fichiers de configuration est incorrect");
+                //throw new Exception("L'un de vos fichiers de configuration est incorrect");
+                XtraMessageBox.Show(ex.Message);
             }
         }
 
@@ -94,7 +135,7 @@ namespace StormPaie_Lib.Classes
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                XtraMessageBox.Show(ex.Message);
             }
             finally
             {
@@ -182,7 +223,7 @@ namespace StormPaie_Lib.Classes
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception(ex.Message);
+                    XtraMessageBox.Show(ex.Message);
                 }
                 finally
                 {
