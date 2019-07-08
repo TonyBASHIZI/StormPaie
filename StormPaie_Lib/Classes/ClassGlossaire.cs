@@ -20,10 +20,8 @@ namespace StormPaie_Lib.Classes
         MySqlDataAdapter dt = null;
         MySqlDataReader dr = null;
         Connection cnx;
-        //private string str, code_isnt;
         private static Glossaire _instance = null;
         
-
         public static Glossaire Instance
         {
             get
@@ -50,9 +48,7 @@ namespace StormPaie_Lib.Classes
             }
             catch (Exception)
             {
-                throw new Exception("l'un de vos fichiers de configuration est incorrect");
-                //throw new Exception(ex.Message);
-
+                throw new Exception("L'un de vos fichiers de configuration est incorrect");
             }
         }
 
@@ -106,7 +102,7 @@ namespace StormPaie_Lib.Classes
             }
         }
 
-        public void GetCombosData(ComboBoxEdit combo, string field, string table)
+        public void GetCombosData(ComboBoxEdit combo, string field, string table, string where = "", string value = "")
         {
             combo.Properties.Items.Clear();
 
@@ -116,7 +112,14 @@ namespace StormPaie_Lib.Classes
             {
                 using (cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = " SELECT " + field + " FROM " + table;
+                    if (where == "" && value =="")
+                    {
+                        cmd.CommandText = " SELECT " + field + " FROM " + table;
+                    }
+                    else
+                    {
+                        cmd.CommandText = " SELECT " + field + " FROM " + table + " WHERE " + where + " = '" + value + "'";
+                    }
 
                     dr = cmd.ExecuteReader();
 
