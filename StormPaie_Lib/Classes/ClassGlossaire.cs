@@ -180,6 +180,45 @@ namespace StormPaie_Lib.Classes
             }
         }
 
+        public List<string> GetDataList(string field, string table, string where = "", string value = "")
+        {
+            List<string> list = new List<string>();
+
+            InitializeConnection();
+
+            try
+            {
+                using (cmd = con.CreateCommand())
+                {
+                    if (where == "" && value == "")
+                    {
+                        cmd.CommandText = " SELECT " + field + " FROM " + table;
+                    }
+                    else
+                    {
+                        cmd.CommandText = " SELECT " + field + " FROM " + table + " WHERE " + where + " = '" + value + "'";
+                    }
+
+                    dr = cmd.ExecuteReader();
+
+                    while (dr.Read())
+                    {
+                        list.Add((dr[field]).ToString());
+                    }
+
+                    return list;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dr.Dispose();
+            }
+        }
+
         #endregion
 
         #region Enregistrement

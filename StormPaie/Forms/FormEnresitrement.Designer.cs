@@ -93,7 +93,8 @@
             this.GColIdNFC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.TxtNom = new DevExpress.XtraEditors.TextEdit();
-            this.CmbNumCard = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.CmbNumCard = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -112,6 +113,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GvEnregistrement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbNumCard.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -707,9 +709,18 @@
             this.CmbNumCard.Properties.Appearance.Options.UseFont = true;
             this.CmbNumCard.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CmbNumCard.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.CmbNumCard.Properties.NullText = "";
+            this.CmbNumCard.Properties.PopupSizeable = false;
+            this.CmbNumCard.Properties.View = this.searchLookUpEdit1View;
             this.CmbNumCard.Size = new System.Drawing.Size(289, 26);
             this.CmbNumCard.TabIndex = 9;
+            // 
+            // searchLookUpEdit1View
+            // 
+            this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
+            this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
             // groupBox2
             // 
@@ -758,6 +769,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GvEnregistrement)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtNom.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbNumCard.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -814,7 +826,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.SeparatorControl separatorControl1;
         private DevExpress.XtraEditors.SearchControl TxtSearchControle;
-        private DevExpress.XtraEditors.ComboBoxEdit CmbNumCard;
         private DevExpress.XtraGrid.GridControl GcEnregistrement;
         private DevExpress.XtraGrid.Views.Grid.GridView GvEnregistrement;
         private DevExpress.XtraGrid.Columns.GridColumn GColMatricule;
@@ -831,5 +842,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
+        private DevExpress.XtraEditors.SearchLookUpEdit CmbNumCard;
+        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
     }
 }
