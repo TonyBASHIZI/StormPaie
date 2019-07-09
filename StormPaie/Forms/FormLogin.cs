@@ -17,11 +17,6 @@ namespace StormPaie.Forms
             InitializeComponent();
         }
 
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnConnection_Click(object sender, EventArgs e)
         {
             if(TxtUsername.Text.Trim()==string.Empty || TxtPassword.Text.ToString().Trim()==string.Empty)
@@ -41,6 +36,21 @@ namespace StormPaie.Forms
                     TxtPassword.Text = "";
                 }
             }
+        }
+
+        private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            //MessageBox.Show("Connectez-vous d'abord");
+            //var result = MessageBox.Show("Voulez-vous quitter l'application?", "Exit", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            //if (result == DialogResult.OK)
+            //{
+            //    Environment.Exit(0);
+            //}
+            //else
+            //{
+
+            //}
         }
     }
 }

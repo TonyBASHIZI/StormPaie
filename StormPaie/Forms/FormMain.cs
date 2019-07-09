@@ -83,5 +83,23 @@ namespace StormPaie.Forms
             PanelAccueil.Visible = false;
             SelectForms(s);
         }
+
+        private void ribbon_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var result = MessageBox.Show("Voulez-vous quitter l'application?", "Exit", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                //Environment.Exit(0);
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

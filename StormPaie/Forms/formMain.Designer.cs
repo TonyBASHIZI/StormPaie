@@ -104,6 +104,7 @@
             this.ribbon.Size = new System.Drawing.Size(1048, 146);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Toolbar.ShowCustomizeItem = false;
+            this.ribbon.Click += new System.EventHandler(this.ribbon_Click);
             // 
             // barStaticItem1
             // 
@@ -428,6 +429,7 @@
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "STORM Pay";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();

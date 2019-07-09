@@ -48,12 +48,12 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.BtnSave = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.BtnDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.BtnSave = new System.Windows.Forms.ToolStripButton();
+            this.BtnDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
@@ -272,6 +272,17 @@
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
             // 
+            // BtnSave
+            // 
+            this.BtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnSave.Enabled = false;
+            this.BtnSave.Image = global::StormPaie.Properties.Resources.Save;
+            this.BtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(23, 22);
+            this.BtnSave.Text = "Enregistrer";
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
@@ -281,17 +292,6 @@
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(6, 25);
-            // 
-            // BtnDelete
-            // 
-            this.BtnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnDelete.Enabled = false;
-            this.BtnDelete.Image = global::StormPaie.Properties.Resources.delete;
-            this.BtnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(23, 22);
-            this.BtnDelete.Text = "Supprimer";
-            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // toolStripSeparator12
             // 
@@ -303,16 +303,16 @@
             this.toolStripSeparator13.Name = "toolStripSeparator13";
             this.toolStripSeparator13.Size = new System.Drawing.Size(6, 25);
             // 
-            // BtnSave
+            // BtnDelete
             // 
-            this.BtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnSave.Enabled = false;
-            this.BtnSave.Image = global::StormPaie.Properties.Resources.Save;
-            this.BtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(23, 22);
-            this.BtnSave.Text = "Enregistrer";
-            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            this.BtnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnDelete.Enabled = false;
+            this.BtnDelete.Image = global::StormPaie.Properties.Resources.delete;
+            this.BtnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(23, 22);
+            this.BtnDelete.Text = "Supprimer";
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // toolStripSeparator16
             // 
