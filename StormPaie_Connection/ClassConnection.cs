@@ -9,7 +9,6 @@ namespace StormPaie_Connection
 
         public void Connect()
         {
-            //pubCon.testFile();
             path = File.ReadAllText(Constants.Database.Path).Trim();
         }
     }

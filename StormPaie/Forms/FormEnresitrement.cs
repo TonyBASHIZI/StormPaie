@@ -28,7 +28,8 @@ namespace StormPaie.Forms
 
         private void LoadCombos()
         {
-            Glossaire.Instance.GetCombosData(CmbNumCard, "id_carte", "carte", "status", "Active");
+            CmbNumCard.Properties.DisplayMember = "carte";
+            CmbNumCard.Properties.DataSource = Glossaire.Instance.GetDataList("id_carte", "carte", "status", "Active");
         }
 
         private void LoadGridControle()
@@ -116,6 +117,9 @@ namespace StormPaie.Forms
             BtnSave.Enabled = true;
         }
 
-        
+        private void CmbNumCard_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
