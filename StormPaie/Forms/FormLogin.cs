@@ -40,17 +40,17 @@ namespace StormPaie.Forms
 
         private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
+            //e.Cancel = true;
             //MessageBox.Show("Connectez-vous d'abord");
-            //var result = MessageBox.Show("Voulez-vous quitter l'application?", "Exit", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            //if (result == DialogResult.OK)
-            //{
-            //    Environment.Exit(0);
-            //}
-            //else
-            //{
-
-            //}
+            var result = MessageBox.Show("Voulez-vous quitter l'application?", "Exit", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
